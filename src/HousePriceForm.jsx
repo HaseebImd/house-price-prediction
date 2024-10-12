@@ -14,6 +14,7 @@ const HousePriceForm = () => {
 
     const [error, setError] = useState({});
     const [predictedPrice, setPredictedPrice] = useState(null);
+    const BASE_URL = 'http://localhost:5000';
 
     const handleChange = (e) => {
         setFormData({
@@ -52,7 +53,7 @@ const HousePriceForm = () => {
 
         try {
             // Make the API request to your Flask API
-            const response = await axios.post('http://localhost:5000/predict', formData);
+            const response = await axios.post(`${BASE_URL}/predict`, formData);
             setPredictedPrice(response.data.predicted_price);
         } catch (err) {
             console.error('Error predicting house price', err);
