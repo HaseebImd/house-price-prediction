@@ -14,7 +14,7 @@ const HousePriceForm = () => {
 
     const [error, setError] = useState({});
     const [predictedPrice, setPredictedPrice] = useState(null);
-    const BASE_URL = 'http://localhost:5000';
+    const BASE_URL = 'https://oyster-app-tizm4.ondigitalocean.app';
 
     const handleChange = (e) => {
         setFormData({
