@@ -72,7 +72,7 @@ const HousePriceForm = () => {
         >
             <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: '400px', width: '100%' }}>
                 <Typography variant="h4" gutterBottom textAlign="center">
-                    House Price Prediction
+                    House Price Prediction Testing
                 </Typography>
                 <TextField
                     fullWidth
